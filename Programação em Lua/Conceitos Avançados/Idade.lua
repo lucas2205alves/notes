@@ -1,0 +1,6 @@
+	print("Em que ano estamos?")
+	ano_atual = io.read()
+	print("Em que ano eu nasci?")
+	ano_nasci = io.read()
+1	idade = (ano_atual - ano_nasci)
+	print("Você tem " .. idade .. "anos")

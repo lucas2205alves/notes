@@ -1,0 +1,5 @@
+
+OlaMundo = "Olá Mundo"
+OlaMundo = "Olá do Mundo"
+
+-- 1) Nomes de variáveis não podem ter acentos,caracteres especiais ou espaços
