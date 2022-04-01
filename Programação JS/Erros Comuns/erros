@@ -1,0 +1,47 @@
+20 Erros e Mitos para Programação
+
+ERRO 0: Tentar memorizar tudo e não anotar
+
+ERRO 1: Buscar a perfeição do código
+
+ERRO 2: Cair na armadilha dos tutoriais / Fazer sozinho, não buscar a solução nos tutoriais
+
+ERRO 3: Apenas copiar e cola código sem entender (Sindrome do Stackoverflow)
+
+ERRO 4: Seguir cegamente a estratégia de alguém 
+
+ERRO 5: Ter medo de pedir feedback do seu código
+
+ERRO 6: Fazer código mal formatado
+
+ERRO 7: Fazer comentários inúteis ou não comentar nada
+
+ERRO 8: Pular o debug e refazer tudo sempre que algo dá errado
+ERRO 8.1: Realizar testes unitários, testes de integração, teste 2e2
+
+ERRO 9: Cair na armadilha da pesquisa eterna
+
+ERRO 10: Se comparar com outros até criar dúvida sobre si próprio
+
+ERRO 11: Pensar que sabe tudo( Sempre Ter Mentalidade de Iniciante )
+
+ERRO 12: Repita os projetos mesmo já tendo a solução
+
+ERRO 13: Aprender sozinho e ter vergonha de pedir ajuda
+
+ERRO 14: Pensar que precisa ser gênio da matemática para ser bom programador
+
+ERRO 15: Desistir perto da hora da mudança
+
+ERRO 16: Duvidar do seu conhecimento ou habilidade sempre que ver um erro 
+
+ERRO 17: Sair pulando de linguagem em linguagem
+
+ERRO 18: Escrever nomes ruins de variável e funções
+- No máximo 10-20 caracteres
+- Usa algum padrão de nomenclatura(camelCase, snake_case, PascalCase)
+- Preferencialmente em inglês
+
+ERRO 19: Não fazer backup ou backup local
+
+ERRO 20: Ignorar o inglês
