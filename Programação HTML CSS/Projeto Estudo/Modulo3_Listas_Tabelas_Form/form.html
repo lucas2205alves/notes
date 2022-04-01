@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <h1>Formulários</h1>
+    <h2>Área de Testes </h2>
+    <form action="login.html" method="get" enctype="multipart/form-data"> <!-- Pode ser GET que envia os dados pela URL, Post que envia os dados "escondidos", também tem a enctype -->
+        <input type="hidden" name="country" value="Br"> <!-- Atributo Hidden pode esconder as tags mas envia os dados-->
+ 
+
+        <label for="usuario">Usuário</label> 
+        <input id="usuario" type="text" name="usuario" value="Digite seu nome"/> <!-- Também tem o type= checkbox,password, radio(caixa de seleção única), submit(envio) e os input precisam de um name-->
+        <input type="color" value="Fazer Cadastro"/><br> <!-- color,date, datetime-local, email, month, number, range, tel, time, url, -->
+        <input type="submit" value="Fazer Cadastro"/><br>
+        <select name="order"> <br>
+            <option value="bestseller">Mais Vendidos</option>
+            <option value="last" selected>Recentes</option>
+        </select> <br>
+        <textarea name="descricao"></textarea><br>
+        <button>Botão</button><br>
+
+        <h1>Área de Cadastro</h1>
+        <label>
+            Nome Completo<br> 
+            <input type="text" value="nome">
+        </label>
+
+        <label>
+            Descrição<br> 
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <label>
+            Categoria<br> 
+            <select name="categoria">
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+        </select>
+        </label>
+        
+        <label>
+            <input type="checkbox"> <a href="paginas/termos.html" target="_blank"></a>
+            Eu li e aceitos os termos estabelecidos
+        </label>
+
+        <h1>Área de Cadastro 2</h1>
+        <fieldset><legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome<br> 
+                <input type="text" name="name" required minlength="2">
+            </label>
+            <label>
+                Sobrenome<br> 
+                <input type="text" name="lastname" required maxlength="4">
+            </label>
+            <label>
+                Foto<br> 
+                <input type="file" name="photo">
+            </label>
+            <label>
+                Idade<br> 
+                <input type="numbers" name="age" min="18" max="120">
+            </label>
+            <label>
+                Data de Nascimento<br> 
+                <input type="date" name="date" max="2022-01-14">
+            </label>
+            <label>
+                Email<br> 
+                <input type="text" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail" required>
+            </label>
+        </fieldset>  
+        <fieldset><legend>Dados Profissionais</legend><label>
+                Nome da Empresa<br> 
+                <input type="text" name="companyname" required>
+            </label>
+            <label>
+                Função na Empresa<br> 
+                <input type="text" name="companytitle" required>
+            </label>
+        </fieldset> 
+    </form>
+</body>
+
+
+
+</html> 

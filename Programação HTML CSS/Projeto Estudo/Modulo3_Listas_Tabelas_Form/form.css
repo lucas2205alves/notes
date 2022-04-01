@@ -1,0 +1,38 @@
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type=text], textarea {
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+body {
+    margin-left: 150px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+button:hover {
+    background-color: #eee
+    ;
+}
+fieldset {
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+legend {
+    padding: 5px;
+}
