@@ -1,0 +1,54 @@
+:root {           /* :root serve para criar váriaveis, que são seguidas de --nome:propriedas; */
+    --bg-color:black;
+    --bg-second: #444;
+    --font-color: white;
+    --font-size: 25px
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(font-size)    
+}
+h1 {
+    color: var(--font-color, #000) /* Também é possível definir um "backup" caso a variável não seja atendida, sendo o seguinte do primeiro definido*/
+}
+.container { /* Também é possível criar variáveis dentro das tags mas só vai funcionar ali dentro*/
+    --verde: green;
+    background-color: var(--bg-second);
+    color: var(--verde);
+    width: calc(100% - 20px); /* a função calc calcula o tamanho de forma automática muito útil para responsividade*/
+    height: 200px;
+}
+
+@media (max-width: 450px) {
+    :root {
+        --font-size: 15px;
+    }
+}
+
+.video {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+.video-area {
+    position: relative;
+    height: 0px;
+    background-color: #ccc;
+    padding: 0px 0px 56.25%;
+}
+  
+.video-area iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+img { /* Essa função pode estipular um min e max para até onde a imagem será responsiva e quando vai parar de ser*/
+    width: min(50%, 200px);
+}
+

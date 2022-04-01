@@ -1,0 +1,73 @@
+img {
+    object-fit: contain; /* Contain completa a imagem sem distorcer, cover usa o máxmo que dá mas corta a imagem*/
+    width: 800px;       /* scaledown vai diminuir proporcionalmente a qualidade da imagem para caber no tamanho*/
+    height: 800px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+/* o @media cria um css que é atendido se atingir tal condição, usado para responsividade*/
+
+@media (min-width: 1000px) { 
+    body {
+        background-color: green;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    body {
+        background-color: purple;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    body {
+        background-color: blue;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media only print {
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* o orientation muda o lugar de acordo com a proporção da tela*/
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+
+@media (aspect-ratio: 1/1) { /* aspect-ratio é a proporção de tela, quando atingido vai mudar a tela*/
+    body {
+        background-color: red;
+    }
+}
+
+
+@media (min-aspect-ratio: 2/1) { /* aspect-ratio é a proporção de tela, quando atingido vai mudar a tela*/
+    body {
+        background-color: pink;
+    }
+}
+
+
+@media (max-aspect-ratio: 1/2) { /* aspect-ratio é a proporção de tela, quando atingido vai mudar a tela*/
+    body {
+        background-color: yellow;
+    }
+}
