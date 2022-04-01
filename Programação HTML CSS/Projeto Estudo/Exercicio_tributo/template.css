@@ -1,0 +1,60 @@
+* {
+    font-family: Arial;
+}
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    flex-direction: column; /* a direção do flexbox pode ser row(linha), column(coluna), row-reverse, e column-reverse*/
+    justify-content: center; /* center(meio do texto), flex-end(onde o flex acaba), */
+    align-items: center;
+} 
+.container h1 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    flex: 1;
+}
+.container h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.widget {
+    flex: 1;
+    height: 20px;
+    width: 100%;
+    border-bottom: #5c5c5c 1px solid;
+}
+
+img {
+    margin-top: 30px;
+    max-height: 350px;
+    max-width: 900px;
+    flex: 1;
+    border-radius: 5px;
+}
+.desc_image {
+    margin-right: 400px;
+    margin-left: 400px;
+    margin-top:30px;
+}
+.achievements {
+    flex: 1;
+    align-items: center;
+    text-align: center;
+}
+.achievements ul {
+    font-size: 40px;
+    align-items: center;
+}
+.achievements li {
+    align-content: center;
+}
+.copyright {
+    margin-top: 60px;
+}

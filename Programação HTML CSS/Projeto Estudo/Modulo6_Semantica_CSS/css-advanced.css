@@ -1,0 +1,70 @@
+form {
+    margin:auto;
+    width:200px;
+    height:100px;
+    background-color:#ccc;
+    text-align:left;
+    padding:20px;
+    
+}
+#teste {
+    background-color: green;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 10px;
+    /* border-radius são as bordas arrendodas, podem ser feitas de forma individual*/
+    border-top: 10px; 
+    border-left: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+}
+
+.exemplo {
+    background: linear-gradient(blue, cyan);
+    height: 200px;
+    width: 200px;
+}
+
+.animacoes {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    animation-name: animacoes;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    position: absolute;
+}
+
+@keyframes animacoes { /* @keyframes é usado para animações como a definida abaixo*/
+    0% {background-color:red;top:0;left:0;}
+    25% {background-color:green;top:0;left:200px;}
+    50% {background-color:pink;top:200px;left:200px;}
+    75% {background-color:blue;top:200px;left:0;}
+    100% {background-color:yellow;top:0;left:0;}
+}
+
+.sombra {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 5px #888888;
+    text-shadow: 2px 2px 1px #888888;
+    transition: all 1s linear;
+    word-wrap: break-word; /* esse atributo serve para o texto não passar a div*/
+}
+.sombra:hover {
+    width: 300px;
+}
+a {
+    color:black;
+    transition: linear all 1s;
+}
+a:hover {
+    color:red
+}
+

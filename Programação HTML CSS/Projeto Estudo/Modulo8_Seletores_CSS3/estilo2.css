@@ -1,0 +1,27 @@
+.transform {
+    background-color:  #FF0000;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    transform:scale(2,1) ; /* Transform serve para movimentar o item, escala,rotação,perspectiva*/
+    transform: rotate(30deg);
+    transform: skew(-20deg);
+}
+.box-sizing {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 10px solid #FF00FF;
+    box-sizing: border-box; /* com content-box, o tamanho especificado fica por conta do conteúdo*/
+    /* e com border-box, o conteúdo mesmo com bordas vai ficar no max 200px especificado*/
+}
+.input {
+    width: 400px;
+    height: 50px;
+    font-size: 27px;
+}
+.input::placeholder {
+    color: red;
+}

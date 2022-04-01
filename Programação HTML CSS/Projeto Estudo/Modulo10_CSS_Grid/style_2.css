@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #ccc;
+    margin-bottom: 100px;
+
+}
+.item {
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.item1 {
+    grid-column-start: 1; /* Começa na coluna imaginaria 1 e termina na 3*/
+    grid-column-end: 3;
+}
+.item3 {
+    grid-column-start: 2;  /* Começa na coluna imaginaria 2 e termina na 4*/
+    grid-column-end: 4; 
+    grid-row-start: 2; /* Começa na linha imaginaria2 e termina na 4*/
+    grid-row-end: 4;
+}
+.item7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #ccc;
+    border-bottom: 300px;
+
+}
+.item2 {
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+}
+.item55 {
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.item33 {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

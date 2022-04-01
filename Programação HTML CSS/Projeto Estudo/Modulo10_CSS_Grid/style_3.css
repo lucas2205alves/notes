@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #ccc;
+    margin-bottom: 100px;
+
+}
+.item {
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.item1 {
+    grid-column: 1 / 3; /* Funciona da mesma forma que o start e end*/
+    grid-row: 1 / span 3; 
+    /* o span vai até o fim da linha que tinha um elemento / pula a primeira
+    linha imaginaria    */
+}
+.item1 { 
+    /* o grid-ara mescla o grid-column e grid-row
+    1. grid-row-start
+    2. grid-column-start
+    3. grid-row-end
+    4. grid-column-end
+    */
+    grid-area: 1 / 1 / span 3 /  3;
+}
+
+.container2 {
+    display: grid;
+    gap: 10px;
+    background-color: #ccc;
+    grid-template-areas: 
+        'item11 item11 item22'
+        'item33 . item22'
+        'item44 item44 item44'    
+    ;
+
+}
+.item2 {
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+.item11 {
+    grid-area: item11;
+}
+.item22 {
+    grid-area: item22;
+}
+.item33 {
+    grid-area: item33;
+}
+.item44 {
+    grid-area: item44;
+}
+.container_3 {
+    margin-top: 100px;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+        "header header header header header header header header"
+        "menu menu content content content content content content"
+        "footer footer footer footer footer footer ad ad"
+    
+    ;
+}
+
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: menu;
+}
+section {
+    grid-area: content;
+}
+footer {
+    grid-area: footer;
+}
+.ad {
+    grid-area: ad;
+}
+
+@media (max-width: 750px) {
+    .container_3 {
+        grid-template-areas: 
+            "header header header menu"
+            "content content content content"
+            "footer footer footer ad"
+        ;
+    }
+}

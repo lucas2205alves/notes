@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 200px 50px 150px; /* Cada valor representa uma coluna*/
+    gap: 10px; /* o gap seria o "padding do CSS GRID*/
+    column-gap: 10px; /* Ainda tem o column e row gap*/
+    row-gap: 10px;
+    margin-bottom: 100px;
+    background-color: #ccc; 
+    justify-content: center;/* Também podemos mudar o lugar dos GRID's*/
+    align-items: center; /* Caso se precise deixar os itens no meio do container*/
+}
+.item {
+    background-color: red;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: auto 200px 100px; /* o auto usa o espaço disponível todo*/
+    grid-template-rows: 100px 200px 50px; 
+    gap: 10px; /* o gap seria o "padding do CSS GRID*/
+    column-gap: 10px; /* Ainda tem o column e row gap*/
+    row-gap: 10px;
+    margin-bottom: 200px;
+}
+.item2 {
+    background-color: blue;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.container3 {
+    display: grid; /* o repeat, repete o número de vezes x o atributo desejado*/
+    grid-template-columns: repeat(3, 1fr) 300px; /* Cima em baixo são iguais*/
+    grid-template-columns: 1fr 1fr 1fr 300px;
+    /* fr seria uma unidade de medida por fração, podendo ser 1 para todos iguais
+       2, para o número 2 ser maior que as outras
+    */
+    gap: 10px; 
+    margin-bottom: 200px;
+}
+.item3 {
+    background-color: yellow;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.container4 {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, 200px);
+    /* Dessa forma ele vai criar o máximo de colunas com 200px*/
+    gap: 10px;
+    margin-bottom: 200px;
+    
+}
+.item4 {
+    background-color: gray;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+    
+}
+
+.container5 {
+    display: grid;  /* o minmax(min, max), defini um minimo e maximo de tamanho muito util*/
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px; 
+    margin-bottom: 200px;
+}
+.item5 {
+    background-color: green;
+    border-radius: 10px;
+    padding:20px;
+    color: #fff;
+    font-size: 25px;
+}

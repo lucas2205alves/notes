@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    background-color: gray;
+    flex-direction: row; /* a direção do flexbox pode ser row(linha), column(coluna), row-reverse, e column-reverse*/
+    flex-flow: nowrap; /* nowrap server para organizar quanto passar os flexbox do limite*/
+    justify-content: center; /* center(meio do texto), flex-end(onde o flex acaba), */
+} 
+
+.container div {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    height: 100px;
+    width: 100px;
+}
+
+.div1 { /* a propriedade flex divide os itens com espaços iguais se for 1, se for 2 ou mais o que tiver o número maior terá a maior espaço*/
+    flex:1;
+    background-color: #f00;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.div2 {
+    flex:1;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.div3 {
+    flex:2;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.container2 {
+    height: 400px;
+    display: flex;
+    background-color: gray;
+    flex-direction: row; 
+    flex-flow: nowrap;         /* space-between(vai alinhar com espaços iguais mas os do canto vão ficar colados no canto)*/
+    justify-content: flex-end; /* center(meio do texto), flex-end(onde o flex acaba), flex-start(onde o flex começa) space-around(vai alinhar com espaçamento iguais) */
+    align-items: flex-end;     /* o align-items usa para alinhar mais especificamente, exatamente as mesmas propriedades*/
+}
+
+.container2 div {
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    height: 100px;
+    width: 100px;
+}
+
+.div4 { 
+    background-color: #f00;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.div5 {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.div6 {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    order: -999; /* Ordena que a div6 fica antes de todo mundo*/
+}
+.div7 {
+    align-self: stretch
+}

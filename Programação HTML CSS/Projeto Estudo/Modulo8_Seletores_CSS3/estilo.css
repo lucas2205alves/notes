@@ -1,0 +1,37 @@
+[required] { /* Dessa forma seleciono todas as tags que tem o atributo REQUIRED*/
+    background-color: RED;}
+div [required] {
+    background-color: black;
+}
+a [href*="noticia"] { /* O Filtro vai buscar o que tiver dentro do href que tenha a palavra economia*/
+    background-color: purple;
+}
+div {
+    margin: 20px;
+    height: 30px;
+}
+div:empty { /* Desse jeito a div:vazia irá ter atributos especificos podendo até sumir com display:none*/
+    background-color: red;
+}
+
+div:first-child{ /* Dessa forma seleciono o primeiro elemento, podendo ser o ultimo tbm*/
+    background-color: black;
+}
+p::first-letter { /* Dessa forma vamos selecionar a primeira letra do conteúdo*/
+    font-size: 40px;
+}
+
+body::not(p) { /* Dessa forma vai selecionar tudo exceto o p que está dentro do body*/
+ background-color: white;   
+}
+
+body {
+    text-align: center;
+}
+
+span::before { /* Cria um elemento antes(before) ou depois(after) da tag/atributo*/
+    content: "-> ";
+}
+span::after { /* Cria um elemento antes(before) ou depois(after) da tag/atributo*/
+    content: "<- ";
+}
