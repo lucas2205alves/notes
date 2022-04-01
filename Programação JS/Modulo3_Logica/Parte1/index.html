@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="style.css" />
+    <title>Curso JS</title>
+</head>
+
+<body>
+    <h1 id="titulo" class="vermelho oculto">titulo</h1>
+
+    <h1 id="style">Mudança de Style por JS</h1>
+    <button onclick="vermelho()">Vermelho</button>
+    <button onclick="azul()">Azul</button>
+    <button onclick="verde()">Verde</button>
+
+    <div id="telefone">99 9999 9999</div>
+    <button onclick="telefone()">Mostrar Telefone</button>
+
+    <button onclick="clicou()">Clique</button>
+
+    <!-- Podemos colocar JavaScript dentro do próprio código HTML-->
+    <button onclick="document.getElementById('titulo').innerHTML='texto2'">Clique2</button>
+
+    <!-- O This seleciona o próprio elemento em que ele está-->
+    <button onclick="this.innerHTML='Clicado'">Clique3</button>
+
+    <!-- Os eventos de teclado são onkeyup(quando solta a tecla) onkeydown(quando a tecla for pressionada) -->
+    <button onkeyup="digitou()">Apertado</button>
+
+    <script src="script.js"></script>
+    <!-- Funciona como o link para o css, mas no caso para o JS, no final carrega primeiro o site depois js-->
+</body>
+
+</html>
