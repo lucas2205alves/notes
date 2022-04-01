@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet href="style.css" />
+    <title>Curso JS</title>
+</head>
+
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <h2 id="campo">Descricao</h2>
+    <script src="script.js"></script>
+    <!-- Funciona como o link para o css, mas no caso para o JS, no final carrega primeiro o site depois js-->
+
+    <img src="images/homem1.png" data-animal="homem" class="imagem"><br>
+
+    <button onclick="trocarImagem('homem1.png', 'homem')">Homem</button>
+    <button onclick="trocarImagem('mulher1.png', 'mulher')">Mulher</button>
+
+    <button onclick="pegarGenero()">Qual é o gênero?</button>
+
+
+    <div class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel mi sed libero ultricies rutrum
+        vitae et ipsum. Etiam quam nibh, tincidunt et iaculis vitae, ornare sed leo. Vivamus convallis condimentum
+        ipsum, eu tempor libero ultrices a. Suspendisse semper eu sem sit amet euismod. Quisque nec diam at nulla
+        fringilla pharetra at hendrerit felis. Vivamus enim nibh, facilisis vel elementum sit amet, pretium sit amet
+        erat. Ut pellentesque ipsum id enim tempor, sed dapibus elit molestie. Curabitur auctor gravida venenatis. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce congue urna ut turpis
+        fermentum, id dapibus quam tristique.</div>
+    <div onclick="subirTela()" class="scrollButton"></div>
+
+</body>
+
+</html>
